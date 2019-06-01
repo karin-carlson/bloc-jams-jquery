@@ -39,3 +39,7 @@
      $('#time-control .total-time').text( duration );
    }, 1000);
 }
+
+     $('#volume-control input').on('input', function (event) {
+        player.setVolume(event.target.value);
+  });
